@@ -8,7 +8,6 @@ import { ToastContainer, Flip } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "swiper/css/bundle";
 import Navbar from "./pages/components/Navbar";
-import Footer from "./pages/components/Footer";
 import { HomeProvider } from "./context/homeContext";
 import Collection from "./pages/Collection";
 
@@ -27,7 +26,6 @@ function App() {
               <Route path="/listing" element={<Listing />} />
               <Route path="/collection" element={<Collection />} />
             </Routes>
-            <Footer />
           </Router>
         </HomeProvider>
       </div>
