@@ -37,7 +37,7 @@ export const HomeProvider = ({ children }) => {
       const cachedData = cachedDataString ? JSON.parse(cachedDataString) : [];
 
       if (cachedData.length > listedNFT.length) {
-        setData(JSON.parse(cachedData));
+        setData(cachedData);
         setDataFetched(true);
         setLoading(false);
         return;
